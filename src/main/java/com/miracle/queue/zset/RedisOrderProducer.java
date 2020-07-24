@@ -38,7 +38,7 @@ public class RedisOrderProducer {
     }
 
 
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 100000)
     public void orderMonitor() {
         Set<ZSetOperations.TypedTuple<Object>> typedTuples = redisTemplate.opsForZSet().rangeWithScores(ORDER_MONITOR_SET, 0, 10);
         if (CollectionUtils.isEmpty(typedTuples)) {
