@@ -1,4 +1,4 @@
-package com.miracle.queue.youzan;
+package com.miracle.queue.youzan.loadbalancer.consitenthash;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;

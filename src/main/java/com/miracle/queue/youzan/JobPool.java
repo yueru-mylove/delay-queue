@@ -1,10 +1,10 @@
 package com.miracle.queue.youzan;
 
+import com.miracle.queue.youzan.loadbalancer.consitenthash.ConsistentHash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.util.LinkedList;
 
 @Component
